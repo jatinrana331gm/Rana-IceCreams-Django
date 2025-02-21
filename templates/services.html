@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body  %} {% endblock body  %}
+
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    .container-services {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    .services-img {
+        width: 100%;
+        height: auto;
+        max-height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .services-content {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .services-content h2 {
+        color: #007BFF; /* A calming blue shade */
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    .services-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+    .services-list {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+    .services-list li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .service-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .service-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-right: 1rem;
+    }
+</style>
+{% endblock style %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+
+{% block services %}
+<div class="container-services">
+    <img src="https://via.placeholder.com/1920x340" class="services-img" alt="Our Services">
+</div>
+
+<div class="services-content">
+    <section class="mb-3">
+        <h2>Our Services</h2>
+        <p>
+            At Rana Ice Creams, we provide a range of services to ensure our customers have the best experience possible. 
+            From custom-made ice cream cakes to catering for special occasions, we are here to make your moments sweeter.
+        </p>
+    </section>
+
+    <section class="mb-3">
+        <h2>Our Offerings</h2>
+        <ul class="services-list">
+            <li><strong>Custom Ice Cream Cakes:</strong> Perfect for birthdays, anniversaries, and celebrations.</li>
+            <li><strong>Special Event Catering:</strong> Make your events memorable with our exclusive ice cream catering services.</li>
+            <li><strong>Seasonal Flavors:</strong> Enjoy limited-edition flavors crafted for every season.</li>
+            <li><strong>Retail Partners:</strong> Find our products in leading retail outlets near you.</li>
+            <li><strong>Home Delivery:</strong> Order online and enjoy our delicious ice creams from the comfort of your home.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Why Choose Our Services?</h2>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/80" alt="Quality Service">
+            <p>We prioritize quality in every scoop, ensuring each service is delivered with excellence.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/80" alt="Customized Experience">
+            <p>Our customizable offerings cater to the unique needs of every customer and event.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/80" alt="Sustainable Practices">
+            <p>Committed to sustainability, we make choices that are good for you and the planet.</p>
+        </div>
+    </section>
+</div>
+
+{% endblock services %}
+
+{% endblock body %}
+

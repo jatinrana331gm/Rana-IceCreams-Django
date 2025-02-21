@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block style %}
+
+{% endblock style %}
+{% block title %}Contact{% endblock title %}
+
+{% block body  %} 
+
+{% block contact %}
+<!-- Your HTML content here -->
+<div class="container-contact r mb-3">
+    <img src="https://images.unsplash.com/photo-1548138081-d02590416982?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="contact-img" style="width: 1920px; height: 340px;" alt="Slide 9">
+</div>
+
+<h1 class="contact-us text-center mb-3">Contact Us</h1>
+
+
+<div style="margin-right: 69px;padding:400px margin-top: -406px;margin-left:720px; position: absolute; padding: 0px;width:600px;height:100px">
+    <form action= "{% url 'contact' %}" method="post" >
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Enter your Name"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input
+          type="phone"
+          class="form-control"
+          id="phone"
+          name="phone"
+          placeholder="Enter your Phone Number"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="exampleTextarea" class="form-label">
+          Tell me about what you want to contact me for...
+        </label>
+        <textarea 
+          class="form-control" 
+          id="exampleTextarea" 
+          name="desc" 
+          rows="3" 
+          placeholder="Enter your message"
+        ></textarea>
+      </div>
+      
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
+
+
+
+{% endblock %}
+
+
+{% endblock body  %}
+
+
+    
+
+    

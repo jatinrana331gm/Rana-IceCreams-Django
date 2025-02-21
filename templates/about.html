@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    .container-about {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    .about-img {
+        width: 100%;
+        height: auto;
+        max-height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .about-content {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .about-content h2 {
+        color: #d90429; /* A vibrant red shade */
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+    .about-content ul {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+    .about-content ul li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+</style>
+{% endblock style %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+
+
+<div class="container-about">
+    <img src="https://via.placeholder.com/1920x340" class="about-img" alt="About Us">
+</div>
+
+<div class="about-content">
+    <section class="mb-3">
+        <h2>Our Story</h2>
+        <p>
+            Rana Ice Creams began with a simple dream: to create delicious ice cream made from the finest ingredients.
+            Over the years, our passion for innovation and excellence has led us to become a beloved name in frozen desserts.
+            From humble beginnings to serving communities far and wide, our journey is fueled by our love for creating smiles.
+        </p>
+    </section>
+
+    <section class="mb-3">
+        <h2>Our Philosophy</h2>
+        <p>
+            At Rana Ice Creams, we believe in the power of quality and creativity. Each flavor is thoughtfully crafted to
+            ensure it delivers a unique and unforgettable experience. We take pride in using real, fresh ingredients and
+            staying true to our commitment to sustainability and ethical practices. Our aim is to bring you the best-tasting
+            ice cream while making a positive impact on the world.
+        </p>
+    </section>
+
+    <section class="mb-3">
+        <h2>Our Flavors</h2>
+        <p>
+            Indulge in a variety of flavors that cater to every taste bud. From classic favorites like creamy vanilla and rich
+            chocolate to adventurous blends like mango chili swirl and caramel pecan delight, there’s something for everyone.
+            Our seasonal specials and limited-edition creations ensure there’s always something new to discover.
+        </p>
+    </section>
+
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Unmatched Quality:</strong> Made with premium ingredients for the creamiest, richest taste.</li>
+            <li><strong>Innovative Flavors:</strong> Always experimenting to bring you exciting and delightful options.</li>
+            <li><strong>Community Focused:</strong> Supporting local farmers and reducing our environmental footprint.</li>
+        </ul>
+    </section>
+</div>
+
+
+
+{% endblock body %}

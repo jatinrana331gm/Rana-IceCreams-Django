@@ -1,0 +1,27 @@
+use like this     STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+http://127.0.0.1:8000/static/test.txt
+
+
+new website Django 
+pip install virtualenv    1
+mkdir website                 2
+python -m venv env             3
+
+
+
+
+new another yes true.....
+
+django-admin startproject websites                1
+ python manage.py startapp home                2
+
+then create urls.py    new app 
+
+url main use /about /settings 
+app urls use path('',include('home.py'))
+
+views.py app us def about(request):
+    return HttpResponse("this is aboout page.")
+
